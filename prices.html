@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Проц стоматология by prots69</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" media="screen">
+    <link href="css/carousel.css" rel="stylesheet" type="text/css">
+    <link href="css/mainStyle.css" rel="stylesheet" type="text/css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var myLatlng = new google.maps.LatLng(54.832806,37.622729);
+        var mapOptions = {
+          center: myLatlng,
+          zoom:18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+
+        var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    
+  </head>
+  <body>
+ 
+
+ <div class="container">
+  <div class="location hidden-xs"> <p style="margin-left:50px">Проц стоматология - г.Пущино Московской обл микр Д дом 6 </p></div>
+ </div>
+  
+<!-- Will not use for now...maybe useful later  
+  Modal
+  <div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-centre">Запись на прием</h4>
+      </div>
+      <div class="modal-body">
+        <form action="post" name="form">
+          <input type="text" class="form-control" placeholder="Ваше имя" name="name"><br>
+          <input type="text" class="form-control" placeholder="Контактный телефон" name="tel"><br>
+          <input type="text" class="form-control" placeholder="e-mail" name="email"><br>
+          <textarea placeholder="Комментарий" class="form-control" name="comment"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-block btn-primary">Записаться</button>
+      </div>
+      </form>
+    </div> /.modal-content 
+  </div>  /.modal-dialog 
+  </div> /.modal 
+-->
+ 
+  <!--myCarousel-->
+  <div id="myCarousel" class="carousel slide hidden-xs" data-ride="carousel">
+      
+
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+          <img class="first-slide" src="file:///C:/Users/pfv/Downloads/Maya/Training/prots/images/header.gif" alt="First slide">
+          <div class="container">
+            
+            <div class="carousel-caption">
+              <h1 style="font-size: 63px; color:#006AAA;">Проц стоматология</h1>
+              <h2> - это лечение зубов в Пущино, Московской области</h2>
+              <p> - это здоровые зубы и красивая улыбка. Хотите такую же? Позвоните нам</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Позвоните нам по тел 8 - 497 - 555 - 66 - 44</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="file:///C:/Users/pfv/Downloads/Maya/Training/prots/images/slide_header4.jpg" alt="Second slide">
+          <div class="container">
+              <div class="carousel-caption">
+              <h1>Мы выполняем следующие виды услуг:</h1>
+              <p>пломбирование, отбеливание, лечение корневых каналов, протезы и коронки, удаление </p>
+              <p><a class="btn btn-lg btn-primary" href="services.html" role="button">Хотите узнать по подробнее?</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="file:///C:/Users/pfv/Downloads/Maya/Training/prots/images/slide_header3.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Мы лечим зубы высококачественными материалами по доступным ценам</h1>
+         <!--     <p><a class="btn btn-lg btn-primary" role="button" data-toggle="modal" data-target="#myModal">Запишитесь к нам</a></p> -->
+                  <p><a class="btn btn-lg btn-primary" href="prices.html" role="button">О ценах...</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div> <!--myCarousel-->
+
+
+   <!--Nav is under the slide or could be on top. If to wrap it up in gray border centered do it in nav class=navbar navbar-default-->
+      
+
+<div class="container">  
+  <nav>
+      <ul class="nav nav-justified nav-li">
+          <li class="active"><a href="header1.html">Главная</a><li>
+          <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Услуги <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="services.html">Пломбирование</a></li>
+                    <li><a href="services.html">Отбеливание</a></li>
+                    <li><a href="#">Лечение корневых каналов</a></li>
+                    <li><a href="#">Гигиеническая чистка</a></li>
+                    <li><a href="#">Коронки, протезы, имплантанты</a></li>
+                    <li><a href="#">Детская стоматология</a></li>
+                  </ul>
+                </li>
+
+          <li><a href="prices.html">Цены</a><li>
+          <li><a href="contacts.html">Контакты</a><li>  
+    </ul> 
+  </nav>
+ <br>
+ <br> 
+ <br>
+
+</div>
+ <!--the above section can be used as template, if so allow for drop from the top 52px(address) + 500px(slide) + 54px(nav) = 604px -->
+ <!--Main page - main content-->
+
+  <div class="container">
+  
+  <div class="pricesTbl">
+    <h2>Цены на стоматологические услуги</h2>
+    <p>Цены указаны с учетом НДС в рублях</p>
+    <div class="row">
+      <div class="col-md-6">
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td>Первичная консультация</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Первичная консультация при продолжении лечения</td>
+              <td>Бесплатно</td>
+            </tr>
+            <tr>
+              <td>Обезболивание</td>
+              <td>300</td>
+            </tr>
+            <tr>
+              <td>Рентген</td>
+              <td>150</td>
+            </tr>
+            <tr>
+              <td>Композитная пломба</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>Эстетическое пломбирование</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>Первичная консультация</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>Первичная консультация</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>Первичная консультация</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>Первичная консультация</td>
+              <td>1000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+  </div>
+  </div>
+ 
+
+
+  <br>
+  
+  <footer class="footer">
+    <div class="container">
+    <p class="text-muted">
+      <a href="#AboutUs">О нас</a>
+      <a href="#cert">Наши сертификаты</a>
+      <a href="#">Наши гарантии</a>
+    </p>
+  </div>
+  </footer>
+
+
+
+
+
+
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

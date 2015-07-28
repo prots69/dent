@@ -1,0 +1,55 @@
+/*this is for header*/
+#headerImg {
+	background: url(../images/header.gif);
+	height: 318px;
+	margin-top: 10px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+/*this is for header1*/
+
+.nav-li {
+  	font-size: 30px;
+  	color: #F5A623;
+  	line-height: 30px;
+  	display: inline;
+}
+.location {
+	float: left;
+    background-image: url(../images/location.png);
+    font-size: 33px;
+    color: #006AAA;
+    margin-right: 40px;
+    background-repeat: no-repeat;
+}
+
+
+#iconImg {
+	background-image: url(../images/treatments.png); 
+	background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FEFFF2;
+    border: 1px solid #ccc;
+    height: 80px;
+    width: 80px;
+    margin-left: 100px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    margin-bottom: 10px;
+    -moz-box-shadow: 3px 0px 6px 1px #ccc -webkit-box-shadow: 3px 0px 6px 1px #ccc;
+    box-shadow: 3px 0px 6px 1px #ccc;
+}
+#treatmImg {
+    margin-top: 15px;
+    background-image: url(../images/canal.gif);
+    height: 182px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+}
+#map {
+	width: 500px;
+	height: 400px;
+	background-color:#CCC; 
+}
